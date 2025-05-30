@@ -1,0 +1,195 @@
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.login-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #d63384;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.google-btn {
+  background-color: #4285F4;
+  color: white;
+}
+
+.dark-toggle {
+  margin-top: 20px;
+  background: none;
+  border: 1px solid #888;
+  color: #555;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode input,
+.dark-mode .login-form button {
+  background-color: #2a2a2a;
+  color: white;
+  border-color: #444;
+}
+
+.login-container {
+  max-width: 420px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgb(230 56 145 / 0.2);
+  background: white;
+  text-align: center;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 12px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline-offset: 2px;
+}
+
+.error-msg {
+  color: #d63384;
+  font-size: 0.85rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.profile-btn {
+  background-color: #d63384; /* pink bg */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.profile-btn:hover,
+.profile-btn:focus {
+  background-color: #228b22; /* forest green bg on hover */
+  color: white;
+  outline: none;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: #d63384;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 1rem;
+  background: #4285f4;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.google-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.extra-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #d63384;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-weight: 600;
+}
+
+.dark-mode-toggle {
+  margin-top: 2rem;
+  padding: 8px 12px;
+  background: #d63384;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Dark mode */
+.dark-mode {
+  background: #222;
+  color: #eee;
+  min-height: 100vh;
+}
+
+.dark-mode .login-container {
+  background: #333;
+  box-shadow: 0 6px 15px rgb(230 56 145 / 0.8);
+}
+
+.dark-mode input {
+  background: #444;
+  color: #eee;
+  border-color: #666;
+}
+
+.dark-mode .error-msg {
+  color: #ff6b81;
+}
+
+.dark-mode .login-form button,
+.dark-mode .google-btn,
+.dark-mode .dark-mode-toggle {
+  background: #ff2d95;
+}
+

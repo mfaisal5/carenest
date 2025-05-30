@@ -1,0 +1,119 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #d63384; /* dark pink */
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white; /* logo visible */
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav a,
+.profile-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Hover and focus: lighter green */
+.nav a:hover,
+.nav a:focus,
+.profile-btn:hover,
+.profile-btn:focus {
+  color: #1e2a47;
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Active / clicked / current page: darker green */
+.nav a:active,
+.nav a.active,
+.profile-btn:active {
+  color: #228b22; /* forest green */
+  text-decoration: underline;
+}
+
+/* Accessibility: visible focus outline */
+.nav a:focus-visible,
+.profile-btn:focus-visible {
+  outline: 2px solid #90ee90; /* light green outline */
+  outline-offset: 2px;
+}
+
+/* Dropdown menu styling */
+.profile-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  background: white;
+  color: #333;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  min-width: 120px;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a,
+.dropdown-menu li button {
+  color: #333;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.hamburger {
+  display:none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #d63384;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+  }
+  .nav.open {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+}
