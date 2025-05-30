@@ -116,8 +116,7 @@ const LoginPage = () => {
         <button className="dark-mode-toggle" onClick={() => setDarkMode(!darkMode)}>
           {darkMode ? 'Light Mode' : 'Dark Mode'}
         </button>
-        <h1 className="hh"> <a href="StartupPage.jsx" target='_blank'>start</a>
-        </h1>
+      
       </main>
       <Footer />
     </div>
